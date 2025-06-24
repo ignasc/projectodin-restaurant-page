@@ -1,4 +1,8 @@
 import "./resetcss.css";
 import "./styles.css";
 
-console.log("Webpage loaded");
+import {pageLoadedMessage, functionMessage} from "./pageLoad.js";
+
+console.log(pageLoadedMessage);
+
+functionMessage();
