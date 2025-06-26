@@ -1,5 +1,8 @@
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 600;
     background-color: #b8c7df;
+}
+
+#content > * {
+    margin: 20px;
 }
