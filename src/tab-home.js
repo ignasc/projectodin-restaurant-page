@@ -5,6 +5,6 @@ const tabHome = {tabName, header, contents};
 
 tabName.textContent = "Home";
 header.textContent = "The Restaurant";
-contents.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus inventore delectus impedit! Blanditiis eius architecto consectetur exercitationem officiis est repellat aperiam distinctio. Quidem qui deleniti nemo atque, beatae id praesentium.";
+contents.textContent = "Welcome to the coolest restaurant in the whole universe!";
 
 export default tabHome;

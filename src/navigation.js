@@ -10,17 +10,11 @@ const btn_all = [
     btn_about,
 ];
 
-for (let index = 0; index < btn_all.length; index++) {
-    const element = btn_all[index];
-    
-    element.addEventListener("click", (e)=>{
-        console.log(e.target.textContent);
-    });
-}
-
 btn_home.textContent = "Home";
 btn_menu.textContent = "Menu";
 btn_contacts.textContent = "Contacts";
 btn_about.textContent = "About";
 
+
 export {btn_home, btn_menu, btn_contacts, btn_about};
+export default btn_all;
