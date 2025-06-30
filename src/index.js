@@ -15,7 +15,6 @@ for (let index = 0; index < btn_all.length; index++) {
     const element = btn_all[index];
     
     element.addEventListener("click", (e)=>{
-        console.log(e.target.textContent);
         updatePageContent(allWebsiteContent[e.target.id]);
     });
 
