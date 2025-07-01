@@ -7,4 +7,14 @@ tabName.textContent = "Contacts";
 header.textContent = "The Restaurant";
 contents.textContent = "Contacs coming soon...";
 
-export default tabContacts;
+const divElement = document.querySelector("#content");
+function showContactsContent(){
+    divElement.textContent = "";
+
+    divElement.appendChild(tabName);
+    divElement.appendChild(header);
+    divElement.appendChild(contents);
+};
+
+export {tabContacts};
+export default showContactsContent;

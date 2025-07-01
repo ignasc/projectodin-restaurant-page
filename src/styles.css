@@ -6,3 +6,11 @@ body {
 #content > * {
     margin: 20px;
 }
+
+.btn-content-active{
+    background-color: #eff0f1;
+}
+
+.btn-content-inactive{
+    background-color: #b8c7df;
+}

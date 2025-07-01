@@ -7,4 +7,14 @@ tabName.textContent = "Menu";
 header.textContent = "The Restaurant";
 contents.textContent = "Menu coming soon...";
 
-export default tabMenu;
+const divElement = document.querySelector("#content");
+function showMenuContent(){
+    divElement.textContent = "";
+
+    divElement.appendChild(tabName);
+    divElement.appendChild(header);
+    divElement.appendChild(contents);
+};
+
+export {tabMenu};
+export default showMenuContent;

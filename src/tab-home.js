@@ -7,4 +7,14 @@ tabName.textContent = "Home";
 header.textContent = "The Restaurant";
 contents.textContent = "Welcome to the coolest restaurant in the whole universe!";
 
-export default tabHome;
+const divElement = document.querySelector("#content");
+function showHomeContent(){
+    divElement.textContent = "";
+
+    divElement.appendChild(tabName);
+    divElement.appendChild(header);
+    divElement.appendChild(contents);
+};
+
+export {tabHome};
+export default showHomeContent;
