@@ -1,3 +1,8 @@
+:root {
+    --main-bg-color: #b8c7df;
+    --tab-active-color: #eff0f1;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #b8c7df;
