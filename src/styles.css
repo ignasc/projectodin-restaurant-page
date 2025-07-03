@@ -1,21 +1,79 @@
 :root {
-    --main-bg-color: #b8c7df;
-    --tab-active-color: #eff0f1;
+    --main-bg-color: #eff0f1;
+    --tab-active-color: #b8c7df;
+    --tab-active-highlight: #868ba3;
+    --tab-border-color: var(--tab-active-color);
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #b8c7df;
+    background-color: var(--main-bg-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#content > * {
-    margin: 20px;
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 10px 5px 0px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    text-align: center;
+    background-color: var(--tab-active-color);
+    width: 500px;
+    align-self: center;
+
+}
+
+#content {
+    padding: 10px;
+}
+
+button {
+    display: inline-block;
+    height: 1.5rem;
+    border: 0px;
+    border-radius: 0.5rem 0.5rem 0px 0px;
+    border: solid var(--main-bg-color);
+    border-width: 2px 2px 0px 2px;
+}
+
+button:hover {
+    border: solid var(--tab-active-highlight);
+    border-width: 2px 2px 0px 2px;
 }
 
 .btn-content-active{
-    background-color: #eff0f1;
+    background-color: var(--tab-active-color);
 }
 
 .btn-content-inactive{
-    background-color: #b8c7df;
+    background-color: var(--main-bg-color);
 }
+
+/*DEBUG*/
+/*header{
+    border: 1px solid red;
+}
+nav{
+    border: 1px solid green;
+}
+#content{
+    border: 1px solid yellow;
+}*/
