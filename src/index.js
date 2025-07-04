@@ -44,6 +44,5 @@ function setActiveTab(id){
     }
 };
 
-
 //trigger home button to show home page on first page load
 btn_all[0].click();

@@ -1,30 +1,31 @@
-//const divSubRoot = document.createElement("div");
+import dishMenuDB from "./dishMenuDB";
+
 const divContent = document.querySelector("#content");
-const tabName = document.createElement("h1");
-const header = document.createElement("h2");
-const contents = document.createElement("p");
-const tabMenu = {tabName, header, contents};
-
-tabName.textContent = "Menu...";
-header.textContent = "The Mystic Restaurant";
-
-const menuList = document.createElement("ul");
+const topTitle = document.createElement("h1");
+const contents = document.createElement("ul");
 const menuListItem = document.createElement("li");
+const menuListItemTitle = document.createElement("h3");
+const menuListItemDesc = document.createElement("p");
 
-for (let index = 1; index <= 5; index++) {
+topTitle.textContent = "The Mystic Menu...";
+
+for (let index = 0; index < dishMenuDB.length; index++) {
     const newItem = menuListItem.cloneNode();
-    newItem.textContent = "Mystery dish No." + index;
-    menuList.appendChild(newItem);
-}
+    const newTitle = menuListItemTitle.cloneNode();
+    const newDesc = menuListItemDesc.cloneNode();
 
-contents.appendChild(menuList);
+    newTitle.textContent = dishMenuDB[index]["title"];
+    newDesc.textContent = dishMenuDB[index]["desc"];
+    newItem.appendChild(newTitle);
+    newItem.appendChild(newDesc);
+    contents.appendChild(newItem);
+};
+
 
 function showMenuContent(){
     divContent.textContent = "";
-    divContent.appendChild(tabName);
-    divContent.appendChild(header);
+    divContent.appendChild(topTitle);
     divContent.appendChild(contents);
 };
 
-export {tabMenu};
 export default showMenuContent;
