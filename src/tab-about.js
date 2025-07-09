@@ -1,4 +1,3 @@
-//const divSubRoot = document.createElement("div");
 const divContent = document.querySelector("#content");
 const topTitle = document.createElement("h1");
 const contents = document.createElement("p");

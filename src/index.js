@@ -6,10 +6,6 @@ import showMenuContent from "./tab-menu";
 import showContactsContent from "./tab-contacts";
 import showAboutContent from "./tab-about";
 
-//import {btn_home, btn_menu, btn_contacts, btn_about} from "./navigation.js";
-
-const navigationMenu = document.querySelector("nav");
-
 const allContent = {
     "btn-home": showHomeContent,
     "btn-menu": showMenuContent,
